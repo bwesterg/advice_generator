@@ -29,7 +29,8 @@ class UsersController < ApplicationController
     if @user
       redirect_to "http://localhost:3001/user.html?id=#{@user.id}"
     else
-      redirect_to "http://localhost:3001/401.html"
+      # redirect_to "http://localhost:3001/401.html"
+      redirect_to "http://localhost:3001/noUser.html"
     end
-  end
+  end 
 end
